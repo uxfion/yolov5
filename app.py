@@ -187,4 +187,4 @@ def video_feed():
 if __name__ == '__main__':
     test_opt = parse_opt()
     check_requirements(exclude=('tensorboard', 'thop'))
-    app.run()
+    app.run(host='0.0.0.0', port=5000)
