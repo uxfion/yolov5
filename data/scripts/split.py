@@ -43,11 +43,11 @@ test_file = open(os.path.join(path, "../test.txt"), "w")
 
 for file in tqdm.tqdm(os.listdir(path)):
     if random.random() < train_percent:
-        train_file.write(file + "\n")
+        train_file.write("./images/" + file + "\n")
     elif random.random() < val_percent:
-        val_file.write(file + "\n")
-    else:
-        test_file.write(file + "\n")
+        val_file.write("./images/" + file + "\n")
+    elif random.random() < test_percent:
+        test_file.write("./images/" + file + "\n")
 
 train_file.close()
 print("train.txt created")
