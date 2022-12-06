@@ -1,1 +1,1 @@
-python3 app.py --source 0 --weights ../weights/best2.pt
+python3 app.py --source 0 --weights ../weights/mask.pt --img 1280
